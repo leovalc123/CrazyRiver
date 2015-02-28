@@ -67,7 +67,7 @@ public class FabricaKamikaze extends Thread {
         while(hilo){
             while(ciclo){
                 Kamikaze nave = new Kamikaze();
-                Image kamika = new ImageIcon(this.getClass().getResource("/Imagenes/Nave enemiga.jpg")).getImage();
+                Image kamika = new ImageIcon(this.getClass().getResource("/Imagenes/kamikaze.jpeg")).getImage();
                 MovimientoObjeto.kamikaze.insertarAlFrente(nave);
                 MovimientoObjeto.kamikazeG.insertarAlFrente(kamika);
 
