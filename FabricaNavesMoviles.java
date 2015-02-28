@@ -65,7 +65,7 @@ public class FabricaNavesMoviles extends Thread{
         while(hilo){
             while(ciclo){
                 NavesMoviles nave = new NavesMoviles();
-                Image avionContrario = new ImageIcon(this.getClass().getResource("/Imagenes/Nave enemiga.jpg")).getImage();
+                Image avionContrario = new ImageIcon(this.getClass().getResource("/Imagenes/Avion2.jpeg")).getImage();
                 MovimientoObjeto.navesMov.insertarAlFrente(nave);
                 MovimientoObjeto.navesMovG.insertarAlFrente(avionContrario);
 
