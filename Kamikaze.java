@@ -15,6 +15,9 @@ public class Kamikaze {
     private int vida;
     private int x,y; //coordenadas de la nave
     
+    /**
+     * Metodo constructor de Kamikaze
+     */
     public Kamikaze(){
         Random random = new Random();
         //La vida aleatoria con una media de 3
@@ -65,7 +68,8 @@ public class Kamikaze {
     
     
     /**
-     * Asigna un valor a la coordenada x del kamikaze
+     * Metodo define un valor a la coordenada x del kamikaze
+     * @param x El parametro es la coordenada x
     */
     public void setX(int x){
         this.x = x;
@@ -73,14 +77,17 @@ public class Kamikaze {
     
     
     /**
-     * Posicion en x del Kamikaze.
+     * Metodo devuelve la posicion en x del Kamikaze.
      * @return x
      */
-    public int getX(){ return x;}
+    public int getX(){ 
+        return x;
+    }//Fin del getY
     
     
     /**
-     * Asigna un valor a la coordenada y del Kamikaze
+     * Metodo define un valor a la coordenada y del Kamikaze
+     * @param y El parametro es la coordenada y
     */
     public void setY(int y){
         this.y = y;
@@ -88,14 +95,16 @@ public class Kamikaze {
     
     
     /**
-     * Posicion en y del kamikaze.
+     * Metodo devuelve la posicion en y del kamikaze.
      * @return y
      */
-    public int getY(){ return y;}
+    public int getY(){ 
+        return y;
+    }//Fin de getY
     
     
     /**
-     * Imprime la informacion del kamikaze.
+     * Metodo imprime la informacion del kamikaze.
      */
     public void imprimirKamikaze(){
         System.out.println();
