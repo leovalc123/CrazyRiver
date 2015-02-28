@@ -25,7 +25,6 @@ public class MovimientoObjeto extends JPanel implements ActionListener, KeyListe
     Thread crono = new Thread(this);
     int tiemcomb = 0;
     int x = 200, y = 550, veloX = 0, veloY = 0;
-    //int vrsX = 200, vrsY = 0, veloVrsY = 2;
     private static int navB, navGB;
     public  static ListaSimple <NaveSimple> naves;
     public  static ListaSimple <Image> navesG;
@@ -51,9 +50,13 @@ public class MovimientoObjeto extends JPanel implements ActionListener, KeyListe
         setFocusTraversalKeysEnabled(false);
     }//Fin de movimientoObjeto
 
+    /**
+     * Metodo inicializador
+     */
     public void init() {
     }
-
+    
+    
     @Override
     public void paint(Graphics g) {
         super.paintComponent(g);
@@ -401,9 +404,10 @@ public class MovimientoObjeto extends JPanel implements ActionListener, KeyListe
         Ventana.setLocationRelativeTo(null);
         Ventana.setResizable(false);
         Ventana.add(obj);
-        TitVida.setText("<html>Vida: " + "<br>" + jug.getVida() + 
-                "<br>Combustible:" + "<br>" + jug.getCombustible() + "<br>" +
-                "Puntaje: " + "<br>"+ jug.getPuntaje() + "</html>");
+        TitVida.setText("<html>Nivel: " + "<br>" + jug.getNivel() + "<br>" +"Vida: " 
+                + "<br>" + jug.getVida() + "<br>Combustible:" + "<br>" + 
+                jug.getCombustible() + "<br>" + "Puntaje: " + "<br>"+ 
+                jug.getPuntaje() + "</html>");
         TitVida.setFont(new Font("Arial",Font.PLAIN,20));
         Ventana.add(TitVida, BorderLayout.LINE_START);
         navB = 0;
