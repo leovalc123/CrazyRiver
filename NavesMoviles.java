@@ -14,7 +14,9 @@ public class NavesMoviles extends NaveSimple {
     //Variable para manejar el movimiento de la nave en el eje x
     private int origenX, derIzq;
     
-    
+    /**
+     * Metodo constructor de NavesMoviles
+     */
     public NavesMoviles(){
         super();
         origenX = super.getX();
@@ -22,20 +24,24 @@ public class NavesMoviles extends NaveSimple {
     }//Fin del constructor
     
     /**
-     * Devuelve el valor de x en el que aparecio la nave en un inicio
+     * Metodo devuelve el valor de x en el que aparecio la nave en un inicio
      * @return origenX
      */
-    public int getOrigenX(){return origenX;}
+    public int getOrigenX(){
+        return origenX;
+    }//Fin de getOrigenX
     
     /**
-     * Devuelve el valor de x en el que aparecio la nave en un inicio
+     * Metodo devuelve el valor de x en el que aparecio la nave en un inicio
      * @return origenX
      */
-    public int getDerIzq(){return derIzq;}
+    public int getDerIzq(){
+        return derIzq;
+    }//Fin de getDerIzq
     
     
     /**
-     * Cambia la variable derIzq. Si es 1, lo pasa a 0 y viceversa
+     * Metodo cambia la variable derIzq. Si es 1, lo pasa a 0 y viceversa
      */
     public void cambiarDerIzq(){
         if(derIzq == 1){
@@ -43,6 +49,6 @@ public class NavesMoviles extends NaveSimple {
         }else{
             derIzq = 1;
         }
-    }//Fin del metodo
+    }//Fin de cambiar 
 
 }//Fin de la clase
