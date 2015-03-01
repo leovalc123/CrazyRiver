@@ -23,6 +23,9 @@ public class FabricaVida extends Thread {
     // de naves
     private boolean ciclo, hilo; 
     
+    /**
+     * Metodo constructor de FabricaVida
+     */
     public FabricaVida(){
        cant += 1;
        ciclo = true;
@@ -31,30 +34,39 @@ public class FabricaVida extends Thread {
     }//Fin del constructor
     
     /**
-     * Devuelve la cantidad de objetos de se han creado.
+     * Metodo devuelve la cantidad de objetos de se han creado.
      * @return cant
      */
-    public int getCant(){return cant;}
+    public int getCant(){
+        return cant;
+    }//Fin de getCant
     
     
     /**
-     * Detiene el hilo que se encarga de la creación de naves. 
+     * Metodo detiene el hilo que se encarga de la creación de naves. 
      */
-    public void stopThread(){ hilo = false;}
+    public void stopThread(){ 
+        hilo = false;
+    }//Fin de stopThread
     
     
     /**
-    * Establece el valor de m a la variable ciclo.
+    * Medoto establece el valor de la variable ciclo.
+    * @param m
     * Sirve para detener un lapso de tiempo la creacion de naves, o bien
     * restablecerla.
     */
-    public void setCiclo(boolean m){ ciclo = m;}
+    public void setCiclo(boolean m){ 
+        ciclo = m;
+    }//Fin de setCiclo
     
     
     /**
      * Establece los segundos minimos entre una nave y otra
     */
-    public void setSegundos(int seg){ this.seg = seg;}
+    public void setSegundos(int seg){ 
+        this.seg = seg;
+    }//Fin de setSegundos
     
     
     @Override
@@ -73,8 +85,5 @@ public class FabricaVida extends Thread {
                 } catch (Exception e) {}    
             }//Fin del while 
         }//Fin del while 
-        
-        
     }//Fin de run
-    
-}//Fin de la clase
+}//Fin de la FabricaVida
