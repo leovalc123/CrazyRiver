@@ -21,6 +21,9 @@ public class FabricaNaves extends Thread {
     // de naves
     private boolean ciclo, hilo; 
     
+    /**
+     * Metodo constructor de FabricaNaves
+     */
     public FabricaNaves(){
        cant += 1;
        ciclo = true;
@@ -29,30 +32,40 @@ public class FabricaNaves extends Thread {
     }//Fin del constructor
     
     /**
-     * Devuelve la cantidad de objetos de se han creado.
+     * Metodo devuelve la cantidad de objetos de se han creado.
      * @return cant
      */
-    public int getCant(){return cant;}
+    public int getCant(){
+        return cant;
+    }//Fin de getCant
     
     
     /**
-     * Detiene el hilo que se encarga de la creación de naves. 
+     * Metod detiene el hilo que se encarga de la creación de naves. 
      */
-    public void stopThread(){ hilo = false;}
+    public void stopThread(){ 
+        hilo = false;
+    }//Fin de stopThread
     
     
     /**
-    * Establece el valor de m a la variable ciclo.
+    * Metodo establece el valor de la variable ciclo.
+    * @param m
     * Sirve para detener un lapso de tiempo la creacion de naves, o bien
     * restablecerla.
     */
-    public void setCiclo(boolean m){ ciclo = m;}
+    public void setCiclo(boolean m){ 
+        ciclo = m;
+    }//Fin de setCiclo
     
     
     /**
-     * Establece los segundos minimos entre una nave y otra
+     * Metodo establece los segundos minimos entre una nave y otra
+     * @param seg
     */
-    public void setSegundos(int seg){ this.seg = seg;}
+    public void setSegundos(int seg){ 
+        this.seg = seg;
+    }//Fin de setSegundos
     
     
     @Override
@@ -77,4 +90,4 @@ public class FabricaNaves extends Thread {
         
     }//Fin de run
     
-}//Fin de la clase
+}//Fin de la FabricaNaves
