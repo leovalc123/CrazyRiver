@@ -86,16 +86,28 @@ public class Menu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>                        
 
+    /**
+     * Metodo genara la accion al precionar el boton
+     * @param evt 
+     */
     private void BotonInstruccionesActionPerformed(java.awt.event.ActionEvent evt) {                                                   
         Instrucciones1.main();
         dispose();
     }                                                  
 
+    /**
+     * Metodo genara la accion al precionar el boton
+     * @param evt 
+     */
     private void BotonJugarActionPerformed(java.awt.event.ActionEvent evt) {                                           
         MovimientoObjeto.main(arg);
         dispose();
     }                                          
 
+    /**
+     * Metodo genara la accion al precionar el boton
+     * @param evt 
+     */
     private void BotonSalirActionPerformed(java.awt.event.ActionEvent evt) {                                           
         System.exit(0);
     }                                          
