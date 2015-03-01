@@ -11,6 +11,9 @@ public class TanqueCombustible {
     private int combustible;
     private int x, y;
     
+    /**
+     * Metodo constructor de TanqueCombustible
+     */
     public TanqueCombustible(){
         Random random = new Random();
         //La vida aleatoria con una media de 50
@@ -34,13 +37,15 @@ public class TanqueCombustible {
                 x = 231;
                 break;
         }//Fin del switch
-    }
+    }//Fin del constructor
     
-    //cant positivo sube la cantidad de combustible, cant negativo baja la cantidad
-    
+    /**
+     * Metodo sube o baja la cantidad de combustible
+     * @param cant (cant positivo suma y negativo resta)
+     */
     public void setCombustible(int cant){
         this.combustible += cant;
-    }
+    }//Fin de setCombustible
     
     /**
      * Devuelve el combustible del tanque
@@ -48,24 +53,43 @@ public class TanqueCombustible {
      */
     public int getCombustible(){
         return combustible;
-    }
+    }//Fin de getCombustible
     
+    /**
+     * Metodo define la posicion en x
+     * @param x 
+     */
     public void setPosX(int x){
         this.x = x;
-    }
+    }//Fin de setPosX
     
+    /**
+     * Metodo devuelve la posicion en x
+     * @return x
+     */
     public int getPosX (){
         return x;
-    }
+    }//Fin de getPosX
     
+    /**
+     * Metodo define la posicion en y
+     * @param y 
+     */
     public void setPosY(int y){
         this.y = y;
-    }
+    }//Fin de setPosY
     
+    /**
+     * Metodo devuelve la posicion en y 
+     * @return y
+     */
     public int getPosY (){
         return y;
-    }
+    }//Fin de getPosY
     
+    /**
+     * Metodo imprime el tanque combustible
+     */
     public void printtanque(){
         System.out.println("Comb: " + this.combustible);
     }
