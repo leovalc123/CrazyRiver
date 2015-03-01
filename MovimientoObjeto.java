@@ -60,7 +60,7 @@ public class MovimientoObjeto extends JPanel implements ActionListener, KeyListe
     @Override
     public void paint(Graphics g) {
         super.paintComponent(g);
-        Image avion = new ImageIcon(this.getClass().getResource("/Imagenes/avion.jpg")).getImage();
+        Image avion = new ImageIcon(this.getClass().getResource("/Imagenes/Nave aliada.jpg")).getImage();
         g.setColor(Color.BLUE);
         g.fillRect(0, 0, 800, 600);
         g.setColor(Color.DARK_GRAY);
@@ -256,7 +256,7 @@ public class MovimientoObjeto extends JPanel implements ActionListener, KeyListe
                     Musica musica = new Musica("/Sonidos/explosion.wav");
                     musica.start();
                     g.drawImage(navesMovG.buscarPosicion2(i), navesMov.buscarPosicion2(i).getX() + 1000, navesMov.buscarPosicion2(i).getY(), null);
-                    navesMov.buscarPosicion2(i).setX(1000);
+                    navesMov.buscarPosicion2(i).setY(2000);
                     jug.setVida(-navesMov.buscarPosicion2(i).getVida());  
                     
                 }else{
@@ -296,7 +296,7 @@ public class MovimientoObjeto extends JPanel implements ActionListener, KeyListe
                     Musica musica = new Musica("/Sonidos/explosion.wav");
                     musica.start();
                     g.drawImage(kamikazeG.buscarPosicion2(i), kamikaze.buscarPosicion2(i).getX() + 1000, kamikaze.buscarPosicion2(i).getY() + 2000, null);
-                    kamikaze.buscarPosicion2(i).setX(1000);
+                    kamikaze.buscarPosicion2(i).setY(2000);
                     jug.setVida(-jug.getVida()/2); 
                     
                 }else{
