@@ -42,6 +42,9 @@ public class MovimientoObjeto extends JPanel implements ActionListener, KeyListe
     private static Jugador jug = new Jugador(); //Si no se instancia aqui hay error
     
 
+    /**
+     * Metodo constructor de MovimientoObjeto
+     */
     public MovimientoObjeto() {
         tiempo.start();
         crono.start();
@@ -56,7 +59,10 @@ public class MovimientoObjeto extends JPanel implements ActionListener, KeyListe
     public void init() {
     }
     
-    
+    /**
+     * Metodo encargado de dibujar las imagenes en las posiciones respectivas
+     * @param g 
+     */
     @Override
     public void paint(Graphics g) {
         super.paintComponent(g);
@@ -524,4 +530,4 @@ public class MovimientoObjeto extends JPanel implements ActionListener, KeyListe
         }
     }
     
-}//Fin de la clase
+}//Fin de la MovimientoObjeto
