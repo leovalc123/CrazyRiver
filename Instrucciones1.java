@@ -58,12 +58,20 @@ public class Instrucciones1 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>                        
 
+    /**
+     * Metodo genera la accion al precionar el boton
+     * @param evt 
+     */
     private void BotonAnteriorActionPerformed(java.awt.event.ActionEvent evt) {                                              
         String[] args = null;
         Menu.main(args);
         dispose();
     }                                             
 
+    /**
+     * Metodo genera la accion al precionar el boton
+     * @param evt 
+     */
     private void BotonSiguienteActionPerformed(java.awt.event.ActionEvent evt) {                                               
         String[] args = null;
         Instrucciones2.main(args);
