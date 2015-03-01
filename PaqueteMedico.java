@@ -11,7 +11,9 @@ public class PaqueteMedico {
     private int vida;
     private int x, y;
     
-    
+    /**
+     * Metodo constructor de Paquete Medico
+     */
     public PaqueteMedico(){
         Random random = new Random();
         //La vida aleatoria con una media de 30
@@ -35,39 +37,61 @@ public class PaqueteMedico {
                 x = 390;
                 break;
         }//Fin del switch
-    }
+    }//Fin del constructor
     
-    
-    
-    public void setVida(int cant){
-        this.vida += cant;
-    }
     
     /**
-     * Devuelve el vida del tanque
-     * @return combustible
+     * Metodo define la vida que vuelve a adquirir el jugador
+     * @param cant 
+     */
+    public void setVida(int cant){
+        this.vida += cant;
+    }//Fin de setVida
+    
+    /**
+     * Metodo devuelve la cantidad vida 
+     * @return vida
      */
     public int getVida(){
         return vida;
-    }
+    }//Fin de getVida
     
+    /**
+     * Metodo define la posicion en x
+     * @param x 
+     */
     public void setPosX(int x){
         this.x = x;
-    }
+    }//Fin de setPosX
     
+    /**
+     * Metodo devuelve la posicion en x
+     * @return x
+     */
     public int getPosX (){
         return x;
-    }
+    }//Fin de getPosY
     
+    /**
+     * Metodo define la posicion en y
+     * @param y 
+     */
     public void setPosY(int y){
         this.y = y;
-    }
+    }//Fin de setPosY
     
+    /**
+     * Metodo devuelve la posicion en y
+     * @return y
+     */
     public int getPosY (){
         return y;
-    }
+    }//Fin de getPosY
     
+    /**
+     * Metodo imprime el paquete medico
+     */
     public void printPaqMed(){
         System.out.println("Vida: " + this.vida);
-    }
-}
+    }//Fin de printPaqMed
+}//Fin de Paquete Medico
