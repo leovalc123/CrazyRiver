@@ -8,12 +8,19 @@ public class Musica extends Thread{
     private static int num;
     private boolean fondo;
     
+    /**
+     * Metodo constructor de Musica
+     */
     public Musica(){
         num += 1;
         setFondo();
         //fondo = false;
     }//Fin del constructor
     
+    /**
+     * Metodo constructor de musica
+     * @param nom El parametro es la dirreccion de la musica
+     */
     public Musica(String nom){
         nombre = nom;
         num += 1;
@@ -21,6 +28,9 @@ public class Musica extends Thread{
         //fondo = false;
     }//Fin del constructor
     
+    /**
+     * Metodo define si la musica es de fondo o de accion
+     */
     private void setFondo(){
         if(num == 1){
             fondo = true;
@@ -30,12 +40,15 @@ public class Musica extends Thread{
     }//Fin de setFondo
     
     /**
-     * Devuelve la cantidad de objetos de este tipo que se han creado
+     * Metodo devuelve la cantidad de objetos de este tipo que se han creado
      * @return num
      */
     public static int getNum(){ return num;}
     
-    
+    /**
+     * Metodo define la direccion de la musica
+     * @param nom 
+     */
     public void setNombre(String nom){
         nombre = nom;
     }//Fin de setNombre
@@ -51,7 +64,5 @@ public class Musica extends Thread{
                sonido.loop();  
             }//Fi del if
         
-    }//Fin del metodo
-    
-    
-}//Fin
+    }//Fin del de run
+}//Fin de Musica
