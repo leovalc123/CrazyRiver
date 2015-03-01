@@ -11,6 +11,9 @@ public class NaveSimple {
     private int tipoDeNave;
     private static ListaSimple naves;
     
+    /**
+     * Metodo constructor de NaveSimple
+     */
     public NaveSimple(){
         Random random = new Random();
         //La vida aleatoria con una media de 3
@@ -50,14 +53,17 @@ public class NaveSimple {
         }//Fin del switch
     }//Fin del constructor
     
-    
+    /**
+     * Metodo devuelve la lista de naves
+     * @return naves
+     */
     public static ListaSimple getNaves (){
         return naves;
     }//Fin del metodo
     
     
     /**
-     * Baja la vida lo que indique el daño.
+     * Metodo baja la vida lo que indique el daño.
      * @param daño 
      */
     public void setVida(int daño){
@@ -73,7 +79,7 @@ public class NaveSimple {
     
     
     /**
-     * Devuelve la vida.
+     * Metodo devuelve la vida.
      * @return vida
      */
     public int getVida(){
@@ -82,7 +88,8 @@ public class NaveSimple {
     
     
     /**
-     * Asigna un valor a la coordenada x de la nave
+     * Metodo define un valor a la coordenada x de la nave
+     * @param x 
     */
     public void setX(int x){
         this.x = x;
@@ -90,35 +97,42 @@ public class NaveSimple {
     
     
     /**
-     * Posicion en x 
+     * Metodo devuelve la posicion en x 
      * @return x
      */
-    public int getX(){ return x;}
+    public int getX(){ 
+        return x;
+    }//Fin de getX
     
     
     /**
-     * DEVUELVE el ancho de la nave (x).
+     * Metodo devuelve el ancho de la nave (x).
     */
     public int getAncho(){
         return ancho;
-    }//Fin de setX
+    }//Fin de getAncho
     
     
     /**
-     * Largo de y 
+     * Metodo devuelve el largo de la nave
      * @return largo
      */
-    public int getLargo(){ return largo;}
+    public int getLargo(){ 
+        return largo;
+    }//Fin de getLargo
     
     
     /**
-     * Devuelve el tipo de enemigo (avion o barco)
+     * Metodo devuelve el tipo de enemigo (avion o barco)
      */
-    public int getTipoDeNave(){return tipoDeNave;}
+    public int getTipoDeNave(){
+        return tipoDeNave;
+    }//Fin de getTipoDeNave
     
     
     /**
-     * Asigna un valor a la coordenada y 
+     * Metodo define un valor a la coordenada y
+     * @param y
     */
     public void setY(int y){
         this.y = y;
@@ -126,14 +140,16 @@ public class NaveSimple {
     
     
     /**
-     * Posicion en y 
+     * Metodo devuelve la posicion en y 
      * @return y
      */
-    public int getY(){ return y;}
+    public int getY(){ 
+        return y;
+    }//Fin de getY
     
     
     /**
-     * Imprime la informacion.
+     * Metodo imprime la informacion.
      */
     public void imprimirKamikaze(){
         System.out.println();
@@ -141,4 +157,4 @@ public class NaveSimple {
         System.out.println();
     }//Fin de imprimirNaveSimple
     
-}//Fin de la clase
+}//Fin de la NaveSimple
